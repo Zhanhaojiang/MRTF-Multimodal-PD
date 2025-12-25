@@ -1,0 +1,31 @@
+experiment:
+  name: mrtf_supplementary_demo
+  seed: 42
+  device: auto
+
+data:
+  kind: dummy              # dummy | folder
+  root: data/processed
+  index_csv: data/processed/index.csv
+
+model:
+  d: 512
+  voice_freq_bins: 128
+  voice_time_steps: 256
+  mri_size: 224
+  sensor_channels: 6
+  sensor_len: 200
+
+train:
+  epochs: 3
+  batch_size: 8
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  grad_clip: 1.0
+  lambda_rl: 0.5
+  fuse_weight: 0.1
+
+reward:
+  alpha1_acc: 1.0
+  alpha2_ecs: 0.5
+  alpha3_err: 1.0

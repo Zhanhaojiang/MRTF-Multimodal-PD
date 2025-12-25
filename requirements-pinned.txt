@@ -1,0 +1,12 @@
+# Pinned-ish dependencies for reproducibility (adjust as needed for your environment)
+torch==2.2.2
+torchvision==0.17.2
+numpy==1.26.4
+tqdm==4.66.4
+matplotlib==3.8.4
+shap==0.45.1
+librosa==0.10.2.post1
+soundfile==0.12.1
+nibabel==5.2.1
+scikit-image==0.23.2
+PyWavelets==1.6.0
